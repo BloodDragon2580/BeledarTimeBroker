@@ -6,14 +6,16 @@ local L = {
         ["Next spawn in"] = "Next Beledar spawn in",
         ["Ctrl + Click to send to General chat."] = "Ctrl + Click to send to General chat.",
         ["Alt + Click to send to Guild chat."] = "Alt + Click to send to Guild chat.",
-        ["beledartimer"] = "Beledar Timer"
+        ["beledartimer"] = "Beledar Timer",
+        ["now"] = "now"
     },
     deDE = {
         ["Spawn Timer"] = "Beledar Spawn Timer",
         ["Next spawn in"] = "Nächster Beledar Spawn in",
         ["Ctrl + Click to send to General chat."] = "Strg + Klicken, um im Allgemein-Chat zu senden.",
         ["Alt + Click to send to Guild chat."] = "Alt + Klicken, um im Gilden-Chat zu senden.",
-        ["beledartimer"] = "Beledar Timer"
+        ["beledartimer"] = "Beledar Timer",
+        ["now"] = "jetzt"
     }
 }
 
@@ -29,7 +31,7 @@ local regionID = GetCurrentRegion()
 local region = (regionID == 3) and spawnTimes.EU or spawnTimes.NA
 
 local function ShowSpawnAlert()
-    RaidNotice_AddMessage(RaidWarningFrame, currentLocale["Spawn Timer"] .. ": " .. currentLocale["Next spawn in"] .. " now!", ChatTypeInfo["RAID_WARNING"])
+	RaidNotice_AddMessage(RaidWarningFrame, currentLocale["Spawn Timer"] .. ": " .. currentLocale["Next spawn in"] .. " " .. currentLocale["now"] .. "!", ChatTypeInfo["RAID_WARNING"])
     
     PlaySoundFile("Sound\\Interface\\RaidWarning.ogg", "Master")
 end
