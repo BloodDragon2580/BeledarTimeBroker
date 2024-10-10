@@ -1,7 +1,7 @@
 ## Interface: 110002
 ## Title: Titan Panel [|cffd6266cBeledarTimeBroker|r]
 ## Notes: Displays spawn timers for EU and NA regions.
-## Version: 1.7
+## Version: 1.8
 ## Author: BloddDragon2580
 ## IconTexture: Interface\AddOns\BeledarTimeBroker\Media\Texture\logo
 
