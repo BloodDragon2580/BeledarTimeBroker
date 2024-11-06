@@ -25,7 +25,7 @@ local currentLocale = L[locale] or L["enUS"]
 -- Daily reset times for EU and NA (in 24-hour format)
 local resetTimes = {
     EU = { hour = 8, minute = 0 },
-    NA = { hour = 3, minute = 0 }
+    NA = { hour = 4, minute = 0 }
 }
 
 local regionID = GetCurrentRegion()
