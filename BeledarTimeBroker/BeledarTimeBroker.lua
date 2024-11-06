@@ -22,17 +22,30 @@ local L = {
 local locale = GetLocale()
 local currentLocale = L[locale] or L["enUS"]
 
-local spawnTimes = {
-    EU = { "00:00", "03:00", "06:00", "09:00", "12:00", "15:00", "18:00", "21:00" },
-    NA = { "23:00", "02:00", "05:00", "08:00", "11:00", "14:00", "17:00", "20:00" }
+-- Daily reset times for EU and NA (in 24-hour format)
+local resetTimes = {
+    EU = { hour = 8, minute = 0 },
+    NA = { hour = 2, minute = 0 }
 }
 
 local regionID = GetCurrentRegion()
-local region = (regionID == 3) and spawnTimes.EU or spawnTimes.NA
+local resetTime = (regionID == 3) and resetTimes.EU or resetTimes.NA
+
+-- Calculate Beledar's spawn times based on reset time
+local function GetBeledarSpawnTimes(resetHour, resetMinute)
+    local spawnTimes = {}
+    local firstSpawnMinutes = (resetHour * 60 + resetMinute) + 60  -- First spawn is 1 hour after reset
+    for i = 0, 7 do
+        local spawnMinutes = firstSpawnMinutes + (i * 180)  -- Subsequent spawns every 3 hours (180 minutes)
+        table.insert(spawnTimes, string.format("%02d:%02d", math.floor(spawnMinutes / 60) % 24, spawnMinutes % 60))
+    end
+    return spawnTimes
+end
+
+local regionSpawnTimes = GetBeledarSpawnTimes(resetTime.hour, resetTime.minute)
 
 local function ShowSpawnAlert()
-	RaidNotice_AddMessage(RaidWarningFrame, currentLocale["Spawn Timer"] .. ": " .. currentLocale["Next spawn in"] .. " " .. currentLocale["now"] .. "!", ChatTypeInfo["RAID_WARNING"])
-    
+    RaidNotice_AddMessage(RaidWarningFrame, currentLocale["Spawn Timer"] .. ": " .. currentLocale["Next spawn in"] .. " " .. currentLocale["now"] .. "!", ChatTypeInfo["RAID_WARNING"])
     PlaySoundFile("Sound\\Interface\\RaidWarning.ogg", "Master")
 end
 
@@ -40,7 +53,7 @@ local function GetTimeUntilNextSpawn()
     local hours, minutes = GetGameTime()
     local currentMinutes = hours * 60 + minutes
 
-    for _, time in ipairs(region) do
+    for _, time in ipairs(regionSpawnTimes) do
         local spawnHour, spawnMinute = time:match("(%d%d):(%d%d)")
         local spawnMinutes = tonumber(spawnHour) * 60 + tonumber(spawnMinute)
 
@@ -53,7 +66,8 @@ local function GetTimeUntilNextSpawn()
         end
     end
 
-    local firstSpawnHour, firstSpawnMinute = region[1]:match("(%d%d):(%d%d)")
+    -- Handle the case when the next spawn is the first one the next day
+    local firstSpawnHour, firstSpawnMinute = regionSpawnTimes[1]:match("(%d%d):(%d%d)")
     local firstSpawnMinutes = tonumber(firstSpawnHour) * 60 + tonumber(firstSpawnMinute) + 24 * 60
     local timeUntilSpawn = firstSpawnMinutes - currentMinutes
     if timeUntilSpawn <= 1 then
