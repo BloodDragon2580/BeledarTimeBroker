@@ -16,6 +16,70 @@ local L = {
         ["Alt + Click to send to Guild chat."] = "Alt + Klicken, um im Gilden-Chat zu senden.",
         ["beledartimer"] = "Beledar Timer",
         ["now"] = "jetzt"
+    },
+    frFR = {
+        ["Spawn Timer"] = "Minuteur de spawn de Beledar",
+        ["Next spawn in"] = "Prochain spawn de Beledar dans",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + Clic pour envoyer dans le canal Général.",
+        ["Alt + Click to send to Guild chat."] = "Alt + Clic pour envoyer dans le canal de Guilde.",
+        ["beledartimer"] = "Minuteur Beledar",
+        ["now"] = "maintenant"
+    },
+    esES = {
+        ["Spawn Timer"] = "Temporizador de aparición de Beledar",
+        ["Next spawn in"] = "Siguiente aparición de Beledar en",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + Clic para enviar al chat General.",
+        ["Alt + Click to send to Guild chat."] = "Alt + Clic para enviar al chat de Hermandad.",
+        ["beledartimer"] = "Temporizador Beledar",
+        ["now"] = "ahora"
+    },
+    itIT = {
+        ["Spawn Timer"] = "Timer di spawn di Beledar",
+        ["Next spawn in"] = "Prossimo spawn di Beledar tra",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + Clic per inviare nella chat Generale.",
+        ["Alt + Click to send to Guild chat."] = "Alt + Clic per inviare nella chat di Gilda.",
+        ["beledartimer"] = "Timer Beledar",
+        ["now"] = "adesso"
+    },
+    ptBR = {
+        ["Spawn Timer"] = "Cronômetro de surgimento de Beledar",
+        ["Next spawn in"] = "Próximo surgimento de Beledar em",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + Clique para enviar ao chat Geral.",
+        ["Alt + Click to send to Guild chat."] = "Alt + Clique para enviar ao chat da Guilda.",
+        ["beledartimer"] = "Cronômetro Beledar",
+        ["now"] = "agora"
+    },
+    ruRU = {
+        ["Spawn Timer"] = "Таймер появления Беледара",
+        ["Next spawn in"] = "Следующее появление Беледара через",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + Клик, чтобы отправить в общий чат.",
+        ["Alt + Click to send to Guild chat."] = "Alt + Клик, чтобы отправить в чат гильдии.",
+        ["beledartimer"] = "Таймер Беледара",
+        ["now"] = "сейчас"
+    },
+    zhCN = {
+        ["Spawn Timer"] = "贝勒达刷新计时器",
+        ["Next spawn in"] = "下次贝勒达刷新于",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + 点击发送到综合频道。",
+        ["Alt + Click to send to Guild chat."] = "Alt + 点击发送到公会频道。",
+        ["beledartimer"] = "贝勒达计时器",
+        ["now"] = "现在"
+    },
+    koKR = {
+        ["Spawn Timer"] = "벨레다르 스폰 타이머",
+        ["Next spawn in"] = "다음 벨레다르 스폰까지",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + 클릭으로 일반 채팅에 보내기.",
+        ["Alt + Click to send to Guild chat."] = "Alt + 클릭으로 길드 채팅에 보내기.",
+        ["beledartimer"] = "벨레다르 타이머",
+        ["now"] = "지금"
+    },
+    jaJP = {
+        ["Spawn Timer"] = "ベレダル出現タイマー",
+        ["Next spawn in"] = "次のベレダル出現まで",
+        ["Ctrl + Click to send to General chat."] = "Ctrl + クリックで一般チャットに送信。",
+        ["Alt + Click to send to Guild chat."] = "Alt + クリックでギルドチャットに送信。",
+        ["beledartimer"] = "ベレダルタイマー",
+        ["now"] = "今"
     }
 }
 

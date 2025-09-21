@@ -1,32 +1,70 @@
-#Englische
-Short Description: 
-Beledar Spawn Timer for Titan Panel that tracks the next spawn and sends notifications in General or Guild chat. 
-Now with on-screen alerts and sound notifications.
+# 🐺 Beledar Spawn Timer
+# English
+A lightweight **World of Warcraft addon** that helps you keep track of **Beledar spawn times**.  
+Perfect for rare hunters, mount farmers, and anyone who wants to be on time for every spawn. ⏰
 
-#Detailed Description: 
-The Beledar Spawn Timer is a plugin for Titan Panel that tracks the next 
-Beledar spawn time based on your region (NA or EU). 
-The timer updates every minute and displays the remaining time for the next spawn.
+---
 
-#You can:
-Ctrl + Click to send the remaining time to General chat.
-Alt + Click to send the remaining time to Guild chat.
-Additionally, when a spawn is about to occur (within 1 minute), 
-an on-screen notification will appear with a sound alert, ensuring you never miss a spawn again!
+## ✨ Features
 
-#Deutsch
-Kurze Beschreibung: 
-Beledar Spawn Timer für Titan Panel, der die nächste Spawn-Zeit 
-verfolgt und Benachrichtigungen im Allgemein- oder Gildenchat sendet. 
-Jetzt auch mit Bildschirmmeldungen und Tonbenachrichtigungen.
+✅ **Automatic spawn times** for EU & NA  
+✅ **Multi-language support** (11 languages 🎉)  
+✅ **LDB support** (LibDataBroker-1.1) for display in any broker bar addon  
+✅ **Chat integration** – One click posts the spawn time to **General or Guild Chat**  
+✅ **Raid Warning alert** 🔔 when a spawn is about to happen  
+✅ **Dynamic update** every 60 seconds  
 
-#Detaillierte Beschreibung: 
-Der Beledar Spawn Timer ist ein Plugin für Titan Panel, 
-das die nächste Beledar-Spawn-Zeit basierend auf deiner Region (NA oder EU) verfolgt. 
-Der Timer wird jede Minute aktualisiert und zeigt die verbleibende Zeit bis zum nächsten Spawn an.
+---
 
-#Du kannst:
-Strg + Klicken, um die verbleibende Zeit im Allgemein-Chat zu senden.
-Alt + Klicken, um die verbleibende Zeit im Gilden-Chat zu senden.
-Zusätzlich erscheint eine Bildschirmmeldung mit Ton, 
-wenn ein Spawn unmittelbar bevorsteht (innerhalb von 1 Minute), damit du keinen Spawn verpasst!
+## 🌍 Supported Languages
+
+| 🌐 Language | Locale |
+|-----------|--------|
+| 🇺🇸 English | `enUS` |
+| 🇩🇪 German | `deDE` |
+| 🇫🇷 French | `frFR` |
+| 🇪🇸 Spanish | `esES` |
+| 🇮🇹 Italian | `itIT` |
+| 🇧🇷 Portuguese (BR) | `ptBR` |
+| 🇷🇺 Russian | `ruRU` |
+| 🇨🇳 Chinese (Simplified) | `zhCN` |
+| 🇰🇷 Korean | `koKR` |
+| 🇯🇵 Japanese | `jaJP` |
+
+*(Falls back to English if your WoW client language is not supported.)* 
+
+---
+
+# Deutsch
+Ein einfaches, leichtgewichtiges **World of Warcraft Addon**, das dir hilft, die **Beledar-Spawnzeiten** im Auge zu behalten.  
+Perfekt für Jäger:innen von seltenen Gegnern, Mount-Farmer:innen und alle, die immer pünktlich beim Spawn sein wollen. ⏰
+
+---
+
+## ✨ Features
+
+✅ **Automatische Spawn-Zeiten** für EU & NA  
+✅ **Mehrsprachige Unterstützung** (11 Sprachen 🎉)  
+✅ **LDB-Support** (LibDataBroker-1.1) für Anzeige in beliebigen Broker-Displays  
+✅ **Chat Integration** – Ein Klick postet die Spawnzeit in den **Allgemein- oder Gildenchat**  
+✅ **Raid Warning Alert** 🔔 bei unmittelbar bevorstehendem Spawn  
+✅ **Dynamisches Update** alle 60 Sekunden  
+
+---
+
+## 🌍 Unterstützte Sprachen
+
+| 🌐 Sprache | Locale |
+|-----------|--------|
+| 🇺🇸 Englisch | `enUS` |
+| 🇩🇪 Deutsch | `deDE` |
+| 🇫🇷 Französisch | `frFR` |
+| 🇪🇸 Spanisch | `esES` |
+| 🇮🇹 Italienisch | `itIT` |
+| 🇧🇷 Portugiesisch (BR) | `ptBR` |
+| 🇷🇺 Russisch | `ruRU` |
+| 🇨🇳 Chinesisch (vereinfacht) | `zhCN` |
+| 🇰🇷 Koreanisch | `koKR` |
+| 🇯🇵 Japanisch | `jaJP` |
+
+*(Fällt automatisch auf Englisch zurück, wenn deine WoW-Clientsprache nicht unterstützt wird.)*
